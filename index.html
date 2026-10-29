@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #parent {
+            height: 100vh;
+        }
+
+        #head {
+            background-color: rgba(54, 1, 58, 0.84);
+            color: aliceblue;
+            display: flex;
+            height: 80px;
+        }
+
+        #head h1 {
+            /* padding: 4px; */
+            margin-left: 10%;
+            margin-top: -2%;
+        }
+
+        
+
+        nav {
+            list-style-type: none;
+            display: flex;
+            margin-left: 40%;
+            margin-top: -16px;
+            align-items: center;
+            padding: 4px;
+            font-size: large;
+
+        }
+
+        li {
+            margin: 15px;
+        }
+
+        li:hover{
+            background-color: aliceblue;
+            color: black;
+            padding: 8px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+
+        #top {
+            background-color: rgb(239, 184, 213);
+            margin-top: -25px;
+            text-align: center;
+            padding:70px;
+            font-family: Segoe UI;
+        }
+
+        #top:hover{
+            background-color: rgb(249, 216, 245);
+            cursor: pointer;
+
+        }
+
+        #top h1:hover{
+            font-size: 35px;
+            cursor: pointer;
+            background-color: rgb(249, 216, 245);
+            
+        }
+
+        #bottom {
+            background-color: rgb(250, 247, 247);
+            margin-top: -25px;
+            text-align: center;
+            padding: 15px;
+
+        }
+
+        #new {
+            width: 400px;
+            height: auto;
+            padding: 20px;
+        }
+
+        button {
+            background-color: rgba(54, 1, 58, 0.84);
+            color: azure;
+            padding: 8px;
+            border-radius: 7px;
+        }
+
+        button:hover{
+            padding: 9px;
+            color: black;
+            background-color: aliceblue;
+            cursor: pointer;
+        }
+
+        #footer {
+            background-color: rgba(54, 1, 58, 0.84);
+            padding: 9px;
+            text-align: center;
+            color: white;
+        }
+
+        #boxes {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: " box1 box2 box3";
+            padding: 40px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        #bx1 {
+            grid-area: box1;
+            background-color: white;
+            padding: 10px;
+            margin: 8px;
+            border-radius: 12px;
+            
+        }
+
+        #bx1:hover{
+            padding: 20px;
+            background-color: rgb(249, 216, 245);
+            cursor: pointer;
+
+        }
+
+        #bx2{
+            grid-area: box2;
+            background-color: white;
+            padding: 10px;
+            margin: 8px;
+            border-radius: 12px;
+        }
+
+        #bx2:hover{
+            padding: 20px;
+            background-color: rgb(249, 216, 245);
+            cursor: pointer;
+
+        }
+
+        #bx3{
+            grid-area: box3;
+            background-color: white;
+            padding: 10px;
+            margin: 8px;
+            border-radius: 12px;
+        }
+
+        #bx3:hover{
+            padding: 20px;
+            background-color: rgb(249, 216, 245);
+            cursor: pointer;
+
+        }
+
+        #bottom h2{
+            color: rgb(85, 3, 44);
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="head">
+            <div id="new">
+                <h1>Creative Space</h1>
+            </div>
+
+            <nav>
+                <li>Home</li>
+                <li>Articles</li>
+                <li>About</li>
+                <li>Contact</li>
+            </nav>
+        </div>
+
+
+
+        <div id="content">
+            <div id="top">
+                <h1>Welcome to our Website</h1>
+                <h4>Learn,Create and Grow with us!</h4>
+                <button>Explore More</button>
+            </div>
+
+            <div id="bottom">
+                <div id="header">
+                    <h2>Our Articles</h2>
+                </div>
+                <div id="boxes">
+                    <div id="bx1">
+                        <h2><strong>HTML</strong></h2>
+                        <p>Build structure of a website</p>
+                    </div>
+                    <div id="bx2">
+                        <h2>CSS</h2>
+                        <p>Make your website beautiful</p>
+                    </div>
+                    <div id="bx3">
+                        <h2>JavaScript</h2>
+                        <p>Make your website interactive</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="footer">
+            <p> @2026 Creative Space | Learn Something New</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
